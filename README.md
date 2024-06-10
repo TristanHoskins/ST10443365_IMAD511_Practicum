@@ -32,6 +32,7 @@ Start
 		num min
 		num max
 		string weatherConditions
+  		string DATA
 		AVERAGE
 
 ouput “insert the day”
@@ -42,11 +43,15 @@ output “insert the maximum temperature”
 input max
 ouput “insert the weather conditions”
 input weatherConditions
+ if min AND max AND DAY AND weatherConditions ="" then
+ 	DATA = min + max + DAY + weatherConditions
+  endif
 if min AND max >0 then
-	AVERAGE= min + max /2
-	Output AVERAGE
+		AVERAGE= min + max /2
+		Output AVERAGE
+  endif
+output DATA
 
-SCREENSHOTS OF EACH SCREEN: 
 
-
+SCREENSHOTS WITH EXPLANATIONS AND ERROR HANDLING INCLUDED IN POWERPOINT
 POWERPOINT PRESENTATION LINK: https://advtechonline-my.sharepoint.com/:p:/g/personal/st10443365_vcconnect_edu_za/EZrz2FfltpFMphk3DO6ei1wB2lDGyPG97JuTZH80yfG_hg?e=ezAdMa
