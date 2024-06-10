@@ -21,7 +21,7 @@ class DetailedViewScreen : AppCompatActivity() {
 
         populateSummaryTable(tableLayout, screenData)
 
-
+//when button 7 is clicked it is linked to go back to previous page
         button7.setOnClickListener {
             val intent = Intent(this, mscreen2::class.java)
             startActivity(intent)
@@ -46,7 +46,7 @@ class DetailedViewScreen : AppCompatActivity() {
             tableLayout.addView(row)
         }
     }
-
+//data is displayed in the text view
     private fun createTextView(text: String): TextView {
         val textView8 = TextView(this)
         textView8.text = text

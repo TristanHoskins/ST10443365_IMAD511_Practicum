@@ -8,10 +8,12 @@ import android.widget.EditText
 import android.widget.TextView
 
 class mscreen2 : AppCompatActivity() {
+    //declare each data the users inserts as changeable
     private lateinit var Day: EditText
     private lateinit var Min: EditText
     private lateinit var Max: EditText
     private lateinit var Weatherconditions: EditText
+    //groups the data to link it to the next screens table
     private val screenData = mutableListOf<Map<String, Any>>()
 
 
@@ -24,27 +26,29 @@ class mscreen2 : AppCompatActivity() {
         Max = findViewById(R.id.editTextNumber2)
         Weatherconditions = findViewById(R.id.editText)
 
+//buttons are declared
         val button3: Button = findViewById(R.id.button3)
         val button6: Button = findViewById(R.id.button6)
         val button5: Button = findViewById(R.id.button5)
         val button4: Button = findViewById(R.id.button4)
-
+//button 4 is linked to array average
         button4.setOnClickListener{
           calculateAverage() }
-
+//button 6 function to exit page
             button6.setOnClickListener {
             finish()
         }
             button3.setOnClickListener {
                 addScreenData()
             }
-
+//button 5 intent to add data to next screen
             button5.setOnClickListener {
                 val intent = Intent(this, DetailedViewScreen::class.java)
                 intent.putExtra("screenData", ArrayList(screenData))
                 startActivity(intent)
             }
         }
+    //average arry function
     private fun calculateAverage() {
         val min = Min.text.toString().toIntOrNull() ?: 0
         val max = Max.text.toString().toIntOrNull() ?: 0
@@ -52,11 +56,13 @@ class mscreen2 : AppCompatActivity() {
         val textView7: TextView = findViewById(R.id.textView7)
         textView7.text = "Average: $average"
     }
+    //screendata array
         private fun addScreenData() {
             val Day = Day.text.toString()
             val Min = Min.text.toString().toIntOrNull() ?: 0
             val Max = Max.text.toString().toIntOrNull() ?: 0
             val Weatherconditions = Weatherconditions.text.toString()
+        //if function to ensure data clears once added
 
             if (Day.isNotEmpty() && (Min > 0 || Max > 0)) {
                 val entry = mapOf(
