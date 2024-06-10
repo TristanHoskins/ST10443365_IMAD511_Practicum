@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class mscreen2 : AppCompatActivity() {
     //declare each data the users inserts as changeable
@@ -76,9 +77,15 @@ class mscreen2 : AppCompatActivity() {
                     "Min" to Min,
                     "Max" to Max,
                     "Weatherconditions" to Weatherconditions
+
                 )
+
+
                 screenData.add(entry)
                 clearInputFields()
+            }
+                    else {
+                    Toast.makeText(this, "Please fill all fields correctly", Toast.LENGTH_LONG).show()
             }
         }
 
