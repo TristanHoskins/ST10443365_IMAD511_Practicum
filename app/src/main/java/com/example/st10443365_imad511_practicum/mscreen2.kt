@@ -50,9 +50,15 @@ class mscreen2 : AppCompatActivity() {
         }
     //average arry function
     private fun calculateAverage() {
+        //loop structure
         val min = Min.text.toString().toIntOrNull() ?: 0
         val max = Max.text.toString().toIntOrNull() ?: 0
-        val average = (min + max) / 2.0
+
+        val values = listOf(min, max)
+        val sum = values.sum()
+        val count = values.count { it != 0 }
+
+        val average = if (count > 0) sum / count.toDouble() else 0.0
         val textView7: TextView = findViewById(R.id.textView7)
         textView7.text = "Average: $average"
     }
