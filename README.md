@@ -14,3 +14,6 @@ repeat the process from step 9 with more data
 you have the option to exit the app
 then click on the next page button to take user to the next screen
 in the summarry screen clcik back to main page button if you wish to enter in more data
+
+
+POWERPOINT PRESENTATION LINK: https://advtechonline-my.sharepoint.com/:p:/g/personal/st10443365_vcconnect_edu_za/EZrz2FfltpFMphk3DO6ei1wB2lDGyPG97JuTZH80yfG_hg?e=ezAdMa
