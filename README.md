@@ -1,6 +1,6 @@
 Tristan Hoskins ST10443365
 
-GITHUB REPOSITORY LINK: 
+GITHUB REPOSITORY LINK: https://github.com/TristanHoskins/ST10443365_IMAD511_Practicum.git
 
 HOW TO USE THE APP:
 Begin by downloading Android Studio.
