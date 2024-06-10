@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ST10443365_IMAD511_Practicum</string>
+    <string name="st10443365">ST10443365</string>
+    <string name="weekly_weather_tracker">WEEKLY WEATHER TRACKER</string>
+    <string name="tristan_hoskins">Tristan Hoskins</string>
+    <string name="main_screen">Main Screen</string>
+    <string name="exit_page">Exit Page</string>
+    <string name="exit_app">exit app</string>
+    <string name="next_page">next page</string>
+    <string name="average">average temperature</string>
+    <string name="day">DAY</string>
+    <string name="min">MIN</string>
+    <string name="name">Name</string>
+    <string name="max">MAX</string>
+    <string name="weather_conditions">Weather Conditions</string>
+    <string name="textview">TextView</string>
+    <string name="name2">Name</string>
+    <string name="textview9">day</string>
+    <string name="back_to_main_page">back to main page</string>
+
+</resources>
